@@ -1,8 +1,9 @@
 from fastapi import FastAPI, UploadFile, File
-from app.processor import process_image
-from models.response import build_response
 import numpy as np
 import cv2
+
+from app.processor import process_image
+from models.response import build_response
 
 app = FastAPI()
 
